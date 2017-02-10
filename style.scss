@@ -1,0 +1,18 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+
+$page-background:#000E14;
+
+$card-color:#00121A;
+$card-border:#003247;
+
+$primary-font-color:#FFD0CD;
+body
+{
+	background-color:$page-background;
+}
+.weather-card
+{
+	color:$primary-font-color;
+	background-color:$card-color;
+	//border:1px solid $card-border;
+}
