@@ -3,7 +3,17 @@ body {
   background-color: #000E14; }
 
 .weather-card {
-  color: #FFD0CD;
-  background-color: #00121A; }
+  color: #E7F3EB;
+  background-color: #00151E; }
+  .weather-card .weather-details {
+    text-align: center; }
+
+.header {
+  text-align: center;
+  background-color: transparent; }
+  .header h3 {
+    color: #F2FDF6; }
+  .header small {
+    color: #E7F3EB; }
 
 /*# sourceMappingURL=style.css.map */

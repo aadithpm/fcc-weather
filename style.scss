@@ -2,10 +2,12 @@
 
 $page-background:#000E14;
 
-$card-color:#00121A;
+$card-color:#00151E;
 $card-border:#003247;
 
-$primary-font-color:#FFD0CD;
+$primary-font-color:#E7F3EB;
+$header-font-color:#F2FDF6;
+
 body
 {
 	background-color:$page-background;
@@ -15,4 +17,22 @@ body
 	color:$primary-font-color;
 	background-color:$card-color;
 	//border:1px solid $card-border;
+	.weather-details
+	{
+		text-align:center;
+	
+	}
+}
+.header
+{
+	text-align:center;
+	background-color:transparent;
+	h3
+	{
+		color:$header-font-color;
+	}
+	small
+	{
+		color:$primary-font-color;
+	}
 }
