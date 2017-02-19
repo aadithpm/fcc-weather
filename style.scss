@@ -1,4 +1,6 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 $page-background:#000E14;
 
@@ -8,14 +10,19 @@ $card-border:#003247;
 $primary-font-color:#E7F3EB;
 $header-font-color:#F2FDF6;
 
+$primary-font:'Roboto Mono',serif;
+$secondary-font:'Rubik',serif;
+
 body
 {
 	background-color:$page-background;
 }
+
 .weather-card
 {
 	color:$primary-font-color;
 	background-color:$card-color;
+	font-family:$primary-font;
 	//border:1px solid $card-border;
 	.weather-details
 	{
@@ -23,10 +30,12 @@ body
 	
 	}
 }
+
 .header
 {
 	text-align:center;
 	background-color:transparent;
+	font-family:$secondary-font;
 	h3
 	{
 		color:$header-font-color;
