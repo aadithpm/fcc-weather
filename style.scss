@@ -27,20 +27,26 @@ body
 	.weather-details
 	{
 		text-align:center;
-	
-	}
-	.day
-	{
-		
-	}
-	.temperature
-	{
 
-	}
-	.forecast .forecast-list
-	{
+		.day
+		{
+
+			font-size:2.2rem;
+		
+		}
+		.temperature
+		{
+
+
+		}
+		.forecast .forecast-list
+		{
+
+			
+		}
 		
 	}
+
 }
 
 .header
@@ -51,9 +57,11 @@ body
 	h3
 	{
 		color:$header-font-color;
+		font-size:3em;
 	}
 	small
 	{
 		color:$primary-font-color;
+		font-style:oblique;
 	}
 }

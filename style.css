@@ -10,14 +10,18 @@ body {
   font-family: "Roboto Mono", serif; }
   .weather-card .weather-details {
     text-align: center; }
+    .weather-card .weather-details .day {
+      font-size: 2.2rem; }
 
 .header {
   text-align: center;
   background-color: transparent;
   font-family: "Rubik", serif; }
   .header h3 {
-    color: #F2FDF6; }
+    color: #F2FDF6;
+    font-size: 3em; }
   .header small {
-    color: #E7F3EB; }
+    color: #E7F3EB;
+    font-style: oblique; }
 
 /*# sourceMappingURL=style.css.map */
