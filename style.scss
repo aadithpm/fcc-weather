@@ -28,7 +28,6 @@ body
 	color:$primary-font-color;
 	//background-color:$card-color;
 	font-family:$primary-font;
-	//border:1px solid $card-border;
 	.weather-details
 	{
 		text-align:center;
@@ -82,7 +81,7 @@ body
 footer
 {
 	background-color:$card-color-3;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	bottom: 0;
 	left: 0;
