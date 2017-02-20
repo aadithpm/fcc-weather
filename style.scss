@@ -7,6 +7,11 @@ $page-background:#000E14;
 $card-color:#00151E;
 $card-border:#003247;
 
+
+$card-color-1:#002231;
+$card-color-2:#001721;
+$card-color-3:#001018;
+
 $primary-font-color:#E7F3EB;
 $header-font-color:#F2FDF6;
 
@@ -21,7 +26,7 @@ body
 .weather-card
 {
 	color:$primary-font-color;
-	background-color:$card-color;
+	//background-color:$card-color;
 	font-family:$primary-font;
 	//border:1px solid $card-border;
 	.weather-details
@@ -30,16 +35,27 @@ body
 
 		.day
 		{
-
 			font-size:2.6rem;
+			background-color:$card-color-1;
 		
 		}
 		.temperature
 		{
 			font-size:2.3rem;
+			background-color:$card-color-2;
 
 		}
-		
+		.forecast
+		{
+			background-color:$card-color-3;
+			font-size:2.2rem;
+		}
+
+		.day,.temperature,.forecast
+		{
+			margin:4%;
+			padding:30px;
+		}
 	}
 
 }
@@ -59,5 +75,16 @@ body
 	{
 		color:$primary-font-color;
 		font-style:oblique;
+		visibility:hidden;
 	}
+}
+
+footer
+{
+	background-color:$card-color-3;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height:25px;
 }

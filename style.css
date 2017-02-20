@@ -6,14 +6,21 @@ body {
 
 .weather-card {
   color: #E7F3EB;
-  background-color: #00151E;
   font-family: "Roboto Mono", serif; }
   .weather-card .weather-details {
     text-align: center; }
     .weather-card .weather-details .day {
-      font-size: 2.6rem; }
+      font-size: 2.6rem;
+      background-color: #002231; }
     .weather-card .weather-details .temperature {
-      font-size: 2.3rem; }
+      font-size: 2.3rem;
+      background-color: #001721; }
+    .weather-card .weather-details .forecast {
+      background-color: #001018;
+      font-size: 2.2rem; }
+    .weather-card .weather-details .day, .weather-card .weather-details .temperature, .weather-card .weather-details .forecast {
+      margin: 4%;
+      padding: 30px; }
 
 .header {
   text-align: center;
@@ -24,6 +31,15 @@ body {
     font-size: 3em; }
   .header small {
     color: #E7F3EB;
-    font-style: oblique; }
+    font-style: oblique;
+    visibility: hidden; }
+
+footer {
+  background-color: #001018;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 25px; }
 
 /*# sourceMappingURL=style.css.map */
