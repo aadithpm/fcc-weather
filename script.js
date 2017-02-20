@@ -20,5 +20,12 @@ function getLoc() {
 $(document).ready(function() {
 
 	getLoc();
-	
+
+	$(".place").click(function()
+	{
+		$("#coords").animate(
+			{visibility:"visible"},
+			400);
+	});
+
 });

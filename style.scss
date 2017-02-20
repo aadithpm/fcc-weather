@@ -31,9 +31,9 @@ body
 	margin-top:25px;
 	margin-bottom:20px;
 	border-bottom:1px solid $card-color-1;
-	small
+	#coords
 	{
-		visibility: hidden;
+		visibility:hidden;
 		font-size:0.5em;
 	}
 }
