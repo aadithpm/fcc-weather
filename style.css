@@ -19,6 +19,7 @@ body {
       .weather-card .weather-details .forecast .forecast-list li {
         display: inline; }
       .weather-card .weather-details .forecast .forecast-list li:nth-child(1) {
+        margin-left: -25px;
         float: left; }
       .weather-card .weather-details .forecast .forecast-list li:nth-child(2) {
         float: right; }
