@@ -1,17 +1,24 @@
+var coords={};
+
+function getLoc() {
+
+		$.getJSON('http://ipinfo.io', function(data) {
+			
+			var lat,long;			
+			console.log(data);
+
+			$("#city").text(data.city);
+			$("#region").text(data.region);
+			$("#country").text(data.country);
+			var latAndLong = data.loc.split(',');
+			$("#lat").text(latAndLong[0]);
+			$("#long").text(latAndLong[1]);
+		});
+
+}
 
 $(document).ready(function() {
-	
-	function getLoc()
-	{
-		$.getJSON('http://ipinfo.io', function(data) {
-  						
-  		console.log(data)
-		
-		});
-	}
 
-	var positionLat;
-	var positionLong;
 	getLoc();
-
+	
 });
