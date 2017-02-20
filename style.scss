@@ -23,6 +23,20 @@ body
 	background-color:$page-background;
 }
 
+.place
+{
+	font-size:2.6rem;
+	color:$primary-font-color;
+	text-align:center;
+	margin-top:25px;
+	margin-bottom:20px;
+	border-bottom:1px solid $card-color-1;
+	small
+	{
+		visibility: hidden;
+		font-size:0.5em;
+	}
+}
 .weather-card
 {
 	color:$primary-font-color;
