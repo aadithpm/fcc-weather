@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	var lat,long;
 
-	$.getJSON('http://ipinfo.io', function(data) {
+	$.getJSON('https://ipinfo.io', function(data) {
 			
 				var latAndLongStr;			
 				//console.log(data);
