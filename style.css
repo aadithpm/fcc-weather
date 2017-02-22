@@ -34,7 +34,8 @@ body {
       font-size: 2.2rem; }
     .weather-card .weather-details .day, .weather-card .weather-details .temperature, .weather-card .weather-details .forecast {
       margin: 4%;
-      padding: 30px; }
+      padding: 30px;
+      opacity: 0; }
 
 .header {
   text-align: center;

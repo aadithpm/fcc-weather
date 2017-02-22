@@ -41,6 +41,9 @@ $(document).ready(function() {
 					$("#degree-low").text(forecast.low);
 					$("#degree-high").text(forecast.high);
 					$("#weather-type").text(forecast.text);
+					$(".day").animate({opacity:1},500);
+					$(".temperature").animate({opacity:1},700);
+					$(".forecast").animate({opacity:1},900);
 				}
 				
 			});
