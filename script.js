@@ -22,7 +22,7 @@ $(document).ready(function() {
 					attach:'.tooltip',
 					title:''
 				});
-				var latAndLongDetails = $(".fa-question").jBox("Tooltip");
+				var latAndLongDetails = $("#coordDetails").jBox("Tooltip");
 				latAndLongDetails.setTitle(latAndLongStr).setContent("");
 
 			//console.log(lat+"||"+long);
@@ -48,5 +48,19 @@ $(document).ready(function() {
 				
 			});
 		});
+	$("footer button").click(function()
+                   {
+                    window.open
+                    ("http://github.com/aadithpm","_blank_");
+                    
+                    });
+
+	new jBox('Modal', {
+		attach:"#about",
+		title:"About the page",
+		content:"This is a project made as part of the FreeCodeCamp development projects. The IPInfo API (http://ipinfo.io) was used to get location/coordinate details. fyhao's Weather API on Mashape (https://market.mashape.com/fyhao/weather-13) was used for the weather forecast data. Lastly, the pretty tooltip and this beautiful modal box was made with Stephan Wagner's jBox (https://stephanwagner.me/jBox/)",
+		width:500
+	});
+
 
 });

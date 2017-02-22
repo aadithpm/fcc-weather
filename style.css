@@ -56,5 +56,17 @@ footer {
   bottom: 0;
   left: 0;
   height: 25px; }
+  footer .fa-github {
+    color: #E7F3EB; }
+  footer button {
+    border: none;
+    background: none; }
+  footer p {
+    font-family: "Roboto Mono", serif;
+    color: #E7F3EB;
+    padding-top: 0px;
+    padding-right: 15px;
+    float: right;
+    display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
