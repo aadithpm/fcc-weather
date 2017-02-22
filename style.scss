@@ -1,6 +1,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 $page-background:#000E14;
 
@@ -33,9 +34,12 @@ body
 	border-bottom:1px solid $card-color-1;
 	#coords
 	{
-		visibility:hidden;
 		font-size:0.5em;
 	}
+}
+.fa-question
+{
+	cursor:pointer;
 }
 .weather-card
 {

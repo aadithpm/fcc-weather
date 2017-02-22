@@ -1,31 +1,22 @@
-var coords={};
+$(document).ready(function() {
 
-function getLoc() {
-
-		$.getJSON('http://ipinfo.io', function(data) {
+	$.getJSON('http://ipinfo.io', function(data) {
 			
-			var lat,long;			
+			var latAndLongStr;			
 			console.log(data);
 
 			$("#city").text(data.city);
 			$("#region").text(data.region);
 			$("#country").text(data.country);
 			var latAndLong = data.loc.split(',');
-			$("#lat").text(latAndLong[0]);
-			$("#long").text(latAndLong[1]);
+			latAndLongStr = "Latitude: "+latAndLong[0]+" || "+"Longitude: "+latAndLong[1];
+			console.log(latAndLongStr);
+			new jBox('Tooltip',
+			{
+				attach:'.tooltip',
+				title:''
+			});
+			var latAndLongDetails = $(".fa-question").jBox("Tooltip");
+			latAndLongDetails.setTitle(latAndLongStr).setContent("");
 		});
-
-}
-
-$(document).ready(function() {
-
-	getLoc();
-
-	$(".place").click(function()
-	{
-		$("#coords").animate(
-			{visibility:"visible"},
-			400);
-	});
-
 });
