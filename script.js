@@ -5,14 +5,14 @@ $(document).ready(function() {
 	$.getJSON('https://ipinfo.io?token=1d606f0fffd13b', function(data) {
 			
 				var latAndLongStr;			
-				//console.log(data);
+				console.log(data);
 
 				$("#city").text(data.city);
 				$("#region").text(data.region);
 				$("#country").text(data.country);
 				var latAndLong = data.loc.split(',');
 				latAndLongStr = "Latitude: "+latAndLong[0]+" || "+"Longitude: "+latAndLong[1];
-				//console.log(latAndLongStr);
+				console.log(latAndLongStr);
 
 				lat = latAndLong[0];
 				long = latAndLong[1];
@@ -25,7 +25,7 @@ $(document).ready(function() {
 				var latAndLongDetails = $("#coordDetails").jBox("Tooltip");
 				latAndLongDetails.setTitle(latAndLongStr).setContent("");
 
-			//console.log(lat+"||"+long);
+			console.log(lat+"||"+long);
 			$.ajax({
 				url: 'https://simple-weather.p.mashape.com/weatherdata?lat='+lat+"&"+"lng="+long,
 				headers:
@@ -36,7 +36,7 @@ $(document).ready(function() {
 				success:function(response)
 				{
 					var forecast=JSON.parse(response).query.results.channel.item.forecast[0];
-					//console.log(forecast);
+					console.log(forecast);
 					$("#date-and-day").text(forecast.day+", "+forecast.date);
 					$("#degree-low").text(forecast.low);
 					$("#degree-high").text(forecast.high);
